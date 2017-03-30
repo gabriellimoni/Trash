@@ -1,0 +1,2 @@
+# Trash
+Site trash.gg
