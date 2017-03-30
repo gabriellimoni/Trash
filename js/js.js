@@ -1,6 +1,44 @@
+$(document).ready(function(e) {
+		// validação de formulário
+		$('#frm_cad').submit(function(event){
+			var res = "";
+			var nome = $('#nome').val();
+			var email = $('#email').val();
+			var nickname = $('#nickname').val();
+			var senha = $('#senha').val();
+			var c_senha = $('#c_senha').val();
+			
+			if(nome == "" || email == "" || nickname == "" || senha == "" || c_senha == ""){
+				if(nome == "")
+					res += "Nome vazio!\n";
+				if(email == "")
+					res += "Email vazio!\n";
+				if(nickname == "")
+					res += "Nickname vazio!\n";
+				if(senha == "")
+					res += "Senha vazia!\n";
+				if(c_senha == "")
+					res += "Confirme sua senha!";
+			}
+			else if(senha != c_senha)
+				res += "Senha e confirmação estão diferentes!";
+				
+			if (res == "")
+				return true;
+			else{
+				alert(res);
+				return false;
+			}
+		});
+});
+
+// JQUERY /\______-----------___________-----------/\
+
+
+// JAVASCRIPT \/_----------------____________________------------------\/
 function validaLogin(){
-	var email = document.getElementById('email').value;
-	var senha = document.getElementById('senha').value;
+	var email = $('#email').val();
+	var senha = $('#senha').val();
 	var res = "";
 	
 	if(email == "" || senha == ""){
@@ -16,16 +54,10 @@ function validaLogin(){
 	return true;		
 }
 
-function abreCadastro(){
-	window.open('cadastro.html');
-}
-
 
 // MODAL --------------------------------
 function abreModal(){
 	var modal = document.getElementById('myModal');
-	var btn = document.getElementById("openLogin");
-	var span = document.getElementsByClassName("close")[0];
 	
 	modal.style.display = "block";
 }
@@ -41,5 +73,4 @@ window.onclick = function(event){
 		fechaModal();
 	}
 }
-
 // -----------------------------------------------

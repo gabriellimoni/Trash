@@ -2,33 +2,35 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <script src="js/js.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Formulário de Login</title>
 </head>
 
 <body>
 <div id="principal">
-
 	<header id="topo">
 		<div id="logoMenu">
             <img id="logo" src="img/LOGOT.png" alt="trash.gg">   
     	</div> 
         <div id="logoMenu">
-            <div class="topnav" id="myTopnav">
+            <nav class="topnav" id="myTopnav">
                 <a href="index.php">Início</a>
                 <a href="#Reporte">Reporte</a>
                 <a href="#Contato">Contato</a>
                 <a href="#Sobre">Sobre</a>
                 <a href="#Login" id="openLogin" onClick="abreModal()">  Login</a>
-            </div>
+            </nav>
         </div>	
     </header>
-    <footer id="rodape">
+	<footer id="rodape">
         <p>Criado e desenvolvido por Adilson da Silva Porto. Todos os direitos reservados. </p>
         <img id="trash" src="img/trash.png" alt="Trash" >
-    </footer>
-	<form action="Processa.php" method="post" name="f1" id="f1" onsubmit="return validar()">
+    </footer>  
+	
+	<form action="Processa.php" method="post" name="frm_cad" id="frm_cad">
     	<table id="form">
         	<tr>
             	<td>

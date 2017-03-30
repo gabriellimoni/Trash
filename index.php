@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <title>Trash.gg</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/js.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
 </head>
 
 <body>
