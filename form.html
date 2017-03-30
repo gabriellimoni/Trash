@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trash.gg</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div id="principal">
+	<header id="topo">
+    	<img id="logo" src="img/LOGOT.png" alt="trash.gg" style="width:8%;">   
+    </header>
+		<div id="login">
+            <form action="Processa.php" method="post" name="f1" id="f1" onsubmit="return validar()">
+                <table id="form">
+                    <tr>
+                        <td>
+                            Nome: 
+                        </td>
+                        <td>
+                            <input type="text" name="nome" id="nome" size="50"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-mail: 
+                        </td>
+                        <td>
+                            <input type="text" name="email" id="email" size="50"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Nickname: 
+                        </td>
+                        <td>
+                            <input type="text" name="nickname" id="nickname" size="20"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Senha:
+                        </td>
+                        <td>
+                            <input type="text" name="senha" id="senha"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Confirmar senha: 
+                        </td>
+                        <td>
+                            <input type="text" name="c_senha" id="c_senha"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="enviar" id="enviar" value="Enviar" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <div id="login">
+            <form action="Processa.php" method="post" name="f1" id="f1" onsubmit="return validar()">
+                <table id="form">
+                    <tr>
+                        <td>
+                            Nome: 
+                        </td>
+                        <td>
+                            <input type="text" name="nome" id="nome" size="50"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-mail: 
+                        </td>
+                        <td>
+                            <input type="text" name="email" id="email" size="50"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Nickname: 
+                        </td>
+                        <td>
+                            <input type="text" name="nickname" id="nickname" size="20"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Senha:
+                        </td>
+                        <td>
+                            <input type="text" name="senha" id="senha"/>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Confirmar senha: 
+                        </td>
+                        <td>
+                            <input type="text" name="c_senha" id="c_senha"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" name="enviar" id="enviar" value="Enviar" /></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        
+        <br><br>
+        
+       	<div id="login">
+       		       
+		</div>
+	<script language="javascript">
+		function validar(){
+			var nome = document.getElementById('nome').value;
+			if(nome != ""){
+				alert("Nome: " + nome);
+				return true;
+			} else
+			{
+				alert("Campo 'Nome' está vazio!");
+				return false;
+			}
+		}
+	</script>
+</div>
+</body>
+</html>

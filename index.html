@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trash.gg</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div id="principal">
+
+	<header id="topo">
+		<div id="logoMenu">
+            <img id="logo" src="img/LOGOT.png" alt="trash.gg">   
+    	</div> 
+        <div id="logoMenu">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Início</a>
+                <a href="#Reporte">Reporte</a>
+                <a href="#Contato">Contato</a>
+                <a href="#Sobre">Sobre</a>
+                <a href="#Login" id="openLogin">  Login</a>
+            </div>
+        </div>	
+    </header>
+    <section id="conteudo">
+    
+    <article class="artigo">
+    	
+    	<header><h1>Title from article</h1></header>
+   	 	<p>This is a paragraph in the article.</p>
+    </article>
+    
+    
+    
+    
+    <article class="artigo">
+        <header><h1>Title from article</h1></header>
+        <p>This is a paragraph in the article.</p>
+    </article>
+    
+    
+    <article class="artigo">
+        <header><h1>Title from article</h1></header>
+        <p><a href="login.html" target="">Login</a></p>
+    </article>
+    
+    
+    </section>
+    
+    <footer id="rodape">
+        <p>Criado e desenvolvido por Adilson da Silva Porto. Todos os direitos reservados. </p>
+        <img id="trash" src="img/trash.png" alt="Trash" >
+    </footer>
+
+	
+    
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+            <form action="Processa.php" method="post" name="f1" id="f1" onsubmit="return validar()">
+            <table id="form">
+                <tr>
+                    <td>
+                        E-mail: 
+                    </td>
+                    <td>
+                        <input type="text" name="email" id="email" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Senha:
+                    </td>
+                    <td>
+                        <input type="text" name="senha" id="senha"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="enviar" id="enviar" value="Enviar" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" name="cadastro" id="cadastro"/></td>
+                </tr>
+            </table>
+        </form>
+      	<a href="cadastro.html" target="new"> Cadastrar-se </a>
+      </div>
+     
+	</div>  
+    
+</div>
+    
+    <script language="javascript">
+			// Get the modal
+			var modal = document.getElementById('myModal');
+		
+			// Get the button that opens the modal
+			var btn = document.getElementById("openLogin");
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			
+			// When the user clicks on the button, open the modal 
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+			
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+			}
+		}
+    </script>
+    <script language="javascript">
+		function validar(){
+			var nome = document.getElementById('nome').value;
+			if(nome != ""){
+				alert("Nome: " + nome);
+				return true;
+			} else
+			{
+				alert("Campo 'Nome' está vazio!");
+				return false;
+			}
+		}
+	</script>
+</div>
+</body>
+</html>
