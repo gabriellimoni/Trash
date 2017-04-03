@@ -76,7 +76,7 @@
             </tr>
             <tr>
             	<td></td>
-                <td><input type="submit" name="enviar" id="enviar" value="Enviar" /></td>
+                <td><input type="submit" class="signupbtn" name="enviar" id="enviar" value="Enviar" /></td>
             </tr>
         </table>
     </form>
